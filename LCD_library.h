@@ -142,6 +142,12 @@ void LCD_BEGIN(){
 	
 }
 
+
+void LCD_CLEAR(){
+    LCD_COMMEND(CLEAR_ALL);
+    delay(10);
+}
+
 void LCD_LINE_CLEAR(int line){
 	LCD_LOC(line,1);
 	LCD_PRINT("                ");
